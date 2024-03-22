@@ -1,0 +1,41 @@
+/* static/css/graphs.css */
+html, body {
+  height: 75%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+#networkContainer, #cfgContainer {
+  height: 25px; /* Each graph takes up half of the viewport height */
+  overflow: hidden;
+  position: relative;
+}
+
+.graph {
+  width: 75%;
+  height: calc(100% - 40px); /* Adjust height to make space for the legend */
+  border: 1px solid lightgray;
+}
+
+#legend {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  z-index: 1000; /* Ensure the legend floats over the graphs */
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.color-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
